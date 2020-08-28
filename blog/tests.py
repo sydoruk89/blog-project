@@ -1,4 +1,4 @@
-from django.test import TestCase
+from django.test import TestCase, SimpleTestCase
 from blog.models import Blog
 
 class TestModel(TestCase):
