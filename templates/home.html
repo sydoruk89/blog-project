@@ -1,10 +1,5 @@
 {% extends 'base.html'%}
 
-    <h2>Blog posts details</h2>
-    {% for blog in object_list%}
-        <li>Details: <a href="{% url 'post_detail' blog.id %}">{{blog.title}}</a></li>
-    {% endfor %}
-
 {% block content %}
     {% for blog in object_list%}
     <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
